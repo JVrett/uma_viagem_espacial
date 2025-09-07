@@ -20,7 +20,7 @@ const outerWildsContent = `
     <p>Escolha com sabedoria.</p>
     <div class="btns">
         <button id="btn-final">Fazer uma pausa</button>
-        <button id="btn-loop">Entrar em um loop temporal</button>
+        <button id="btn-loop">Chegar ao fim</button>
     </div>
 `;
 
