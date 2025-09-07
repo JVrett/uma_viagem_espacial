@@ -1,16 +1,14 @@
-// Obtendo os elementos do HTML
 const showButtonLabel = document.querySelector('.show-button');
 const background = document.querySelector('.background');
 const alertBox = document.querySelector('.alert-box');
 
-// Novos IDs dos vídeos
+// IDs dos vídeos
 const videoFinal = document.getElementById('video-pausa');
 const videoLoop = document.getElementById('video-loop');
 
-// Elemento do botão de retorno (que será injetado no HTML)
+// Elemento do botão de retorno 
 const btnReturn = document.getElementById('btn-return');
 
-// Conteúdo HTML das escolhas de Outer Wilds
 const outerWildsContent = `
     <div class="icon">
         <i class="fas fa-rocket"></i>
@@ -52,13 +50,13 @@ function hidePopup() {
     alertBox.innerHTML = ''; // Limpa o conteúdo do pop-up
 }
 
-// Lógica para a escolha do "Final Verdadeiro"
+
 function handleFinalChoice() {
     hidePopup();
     videoFinal.classList.add('show-video');
     videoFinal.play();
 
-    //  Mostra o botão de retorno após 15s
+
     setTimeout(() => {
         if (btnReturn) {
             btnReturn.classList.remove('hidden');
@@ -66,7 +64,6 @@ function handleFinalChoice() {
         }
     }, 15000);
 
-    // Para o vídeo e recarrega a página após o tempo desejado (ex: 2 minutos)
     setTimeout(() => {
         videoFinal.pause();
         location.reload();
