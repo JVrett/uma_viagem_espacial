@@ -92,7 +92,7 @@ function handleLoopChoice() {
     }, 125000);
 }
 
-// Adiciona o evento de clique ao botão "Escolha"
+// Adiciona o evento de clique ao botão "Ola"
 showButtonLabel.addEventListener('click', showOuterWildsPopup);
 
 // Evento de clique no botão de retorno
