@@ -89,7 +89,7 @@ function handleLoopChoice() {
     setTimeout(() => {
         videoLoop.pause();
         location.reload();
-    }, 125000);
+    }, 125001);
 }
 
 // Adiciona o evento de clique ao botão "Ola"
